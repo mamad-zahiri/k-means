@@ -26,7 +26,9 @@ def classify(points: np.array, k: int):
     old_centers = None
     centers_diff = 1
 
-    while centers_diff > 1e-10:
+    EPSILON = 1e-10
+
+    while centers_diff > EPSILON:
         clusters.fill(False)
         for point in range(number):
             cluster = find_cluster(centers, points[point])
