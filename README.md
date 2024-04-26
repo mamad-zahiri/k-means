@@ -1,23 +1,23 @@
 # k-means
 
-Implementing K-means algorithm with python and numpy
+Implementing **k-means** algorithm with python and numpy
 
----
-
-### Installation
-
-```bash
-$ pip install numpy pandas
-```
-
----
-
-### How to Use
+## Installation
 
 ```shell
-$ python3 main.py <cluster_number>
+pip install numpy
 ```
 
-cluster number: the number of cluster that you want to classify the iris data
+## How to Use
 
-eg: `$ python3 main.py 3`
+```shell
+python main.py <int:clusters_number>
+```
+
+- **cluster number**: The number of clusters you want to classify the dataset into
+
+eg:
+
+```shell
+python main.py 3
+```
