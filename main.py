@@ -45,10 +45,8 @@ def classify(points: np.array, k: int):
 
 if __name__ == "__main__":
     import sys
-    import pandas as pd
 
-    iris = (pd.read_csv("iris.csv").to_numpy() + 5) ** 3
-
+    iris = np.genfromtxt("iris.csv", delimiter=",")
     k = int(sys.argv[1])
 
     print(classify(iris, k))
